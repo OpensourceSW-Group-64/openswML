@@ -34,7 +34,11 @@ FER2013_dataset/
 ├── test/
 ```
 
----
+## 2. Run the Streamlit Application
+- Navigate to the project directory and execute the following command:
+```bash
+streamlit run emotion_analysis.py
+```
 
 ## Features
 - **Text Sentiment Analysis**: Type text in the provided input field to analyze the sentiment (e.g., Positive, Negative, Neutral).
