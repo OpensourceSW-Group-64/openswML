@@ -40,7 +40,7 @@ FER2013_dataset/
 streamlit run emotion_analysis.py
 ```
 
-## Features
+## 3. Features
 - **Text Sentiment Analysis**: Type text in the provided input field to analyze the sentiment (e.g., Positive, Negative, Neutral).
 - **Facial Emotion Recognition**: Turn on your webcam to recognize facial emotions in real time (e.g., Angry, Disgust, Fear, Happy, Neutral, Sad, Surprise).
 
