@@ -19,6 +19,7 @@ Install the necessary dependencies using pip:
 ```bash
 pip install tensorflow streamlit opencv-python transformers
 ```
+
 ---
 
 # How to Run the Project
@@ -31,6 +32,7 @@ pip install tensorflow streamlit opencv-python transformers
 FER2013_dataset/
 ├── train/
 ├── test/
+```
 
 ---
 
