@@ -1,30 +1,55 @@
-Emotion Analysis Dashboard
-📖 Project Overview
-Emotion Analysis Dashboard is a Streamlit-based application that analyzes emotions from facial expressions and text. It uses OpenCV and TensorFlow for real-time facial emotion recognition and Hugging Face Transformers for text sentiment analysis.
+# Emotion Analysis Dashboard
 
-📦 Installation
-Install required libraries:
+## Project Overview
+Emotion Analysis Dashboard is a real-time emotion recognition system that combines facial emotion analysis using a dataset and convolutional neural network (CNN) and text sentiment analysis powered by a Hugging Face's Transformers library. The application is built with Streamlit for easy deployment and interactivity.
 
-pip install streamlit tensorflow opencv-python numpy transformers
+---
 
-Prepare the FER2013 dataset:
-Download the FER2013 dataset and organize it as follows:
+## Packages and Dependencies
+
+| Package      | Version | Description                              |
+|--------------|---------|------------------------------------------|
+| TensorFlow   | 2.6+    | For training and testing the facial recognition model |
+| Streamlit    | 1.1+    | For building the web app interface       |
+| OpenCV       | 4.5+    | For reading and loading the FER2013 dataset |
+| Transformers | 4.11+   | For sentiment analysis using Hugging Face |
+
+### Installation
+Install the necessary dependencies using pip:
+```bash
+pip install tensorflow streamlit opencv-python transformers
+
+---
+
+# How to Run the Project
+
+## 1. Download the FER2013 Dataset
+- Download the FER2013 dataset.
+- Place the dataset into the `FER2013_dataset/` directory with the following structure:
+
+```bash
 FER2013_dataset/
 ├── train/
-└── test/
+├── test/
 
-🚀 How to Run
-Start the Streamlit app:
-streamlit run emotion_analysis.py
-Features:
-Text Sentiment Analysis: Analyze emotions by entering text into the input field.
-Facial Emotion Recognition: Use your webcam to analyze facial emotions in real-time.
+---
 
-🛠 Technologies Used
-Facial Emotion Recognition: CNN model to classify emotions (Angry, Disgust, Fear, Happy, Neutral, Sad, Surprise).
-Text Sentiment Analysis: Hugging Face’s distilbert-base-uncased-finetuned-sst-2-english model.
+## Features
+- **Text Sentiment Analysis**: Type text in the provided input field to analyze the sentiment (e.g., Positive, Negative, Neutral).
+- **Facial Emotion Recognition**: Turn on your webcam to recognize facial emotions in real time (e.g., Angry, Disgust, Fear, Happy, Neutral, Sad, Surprise).
 
-📂 File Structure
-emotion-analysis-dashboard/
-├── emotion_analysis.py   # Main application code
-└── FER2013_dataset/      # Dataset
+---
+
+## References
+Below are the materials and resources used in developing this project:
+- **Dataset**: [FER2013 Facial Emotion Recognition Dataset](#)
+- **Tutorials and Resources**:
+  - Streamlit Documentation
+  - Hugging Face Tutorials
+  - TensorFlow Tutorials
+- **Libraries**:
+  - OpenCV
+  - TensorFlow
+- **Blogs and Code Snippets**:
+  - Blog article on facial emotion recognition using TensorFlow
+  - Tips for integrating OpenCV with Streamlit
